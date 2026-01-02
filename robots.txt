@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://revera.vip/sitemap.xml
