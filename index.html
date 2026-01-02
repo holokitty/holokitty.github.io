@@ -1,49 +1,362 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>REVERA</title>
+
+  <title>REVERA — Cybersecurity Consulting, Incident Response & Security Audits (US • UAE • EU)</title>
+  <meta name="description" content="REVERA delivers cybersecurity consulting, incident response, security audits, infrastructure hardening, and monitoring & automation for organizations in the US, UAE, and EU. Discreet. Precise. Outcome-driven." />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <link rel="canonical" href="https://revera.vip/" />
+
+  <link rel="alternate" hreflang="en" href="https://revera.vip/" />
+  <link rel="alternate" hreflang="en-us" href="https://revera.vip/" />
+  <link rel="alternate" hreflang="en-ae" href="https://revera.vip/" />
+  <link rel="alternate" hreflang="en-gb" href="https://revera.vip/" />
+  <link rel="alternate" hreflang="x-default" href="https://revera.vip/" />
+
+  <meta property="og:title" content="REVERA — No noise. Just action." />
+  <meta property="og:description" content="Cybersecurity consulting, incident response, security audits, and IT execution for organizations in the US, UAE, and EU." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://revera.vip/" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="REVERA — Cybersecurity & IT Execution" />
+  <meta name="twitter:description" content="Discreet cybersecurity consulting, incident response, audits, hardening, monitoring & automation (US • UAE • EU)." />
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ProfessionalService",
+    "name":"REVERA",
+    "url":"https://revera.vip/",
+    "description":"Cybersecurity consulting, incident response, security audits, infrastructure hardening, and monitoring & automation for organizations in the US, UAE, and EU.",
+    "areaServed":[
+      {"@type":"AdministrativeArea","name":"United States"},
+      {"@type":"AdministrativeArea","name":"United Arab Emirates"},
+      {"@type":"AdministrativeArea","name":"Europe"}
+    ],
+    "serviceType":[
+      "Cybersecurity Consulting",
+      "Incident Response",
+      "Security Audit",
+      "Infrastructure Hardening",
+      "Monitoring and Automation"
+    ],
+    "contactPoint":[{
+      "@type":"ContactPoint",
+      "contactType":"Business inquiries",
+      "email":"mariarevera.vip@gmail.com",
+      "availableLanguage":["en"]
+    }],
+    "sameAs":[
+      "https://www.instagram.com/revera_vip/",
+      "https://www.youtube.com/@revera_vip"
+    ]
+  }
+  </script>
+
   <style>
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
-      background:#0b0b0e;color:#eaeaf0;display:flex;min-height:100vh;align-items:center}
-    .wrap{max-width:880px;padding:48px 24px;margin:0 auto}
-    .kicker{letter-spacing:.18em;text-transform:uppercase;color:#9aa0aa;font-size:12px}
-    h1{font-size:48px;line-height:1.05;margin:14px 0 10px}
-    p{font-size:18px;line-height:1.55;color:#c7c9d1;max-width:720px}
-    .btns{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
-    a.btn{padding:12px 16px;border-radius:14px;text-decoration:none;display:inline-block}
-    .primary{background:#eaeaf0;color:#0b0b0e;font-weight:600}
-    .ghost{border:1px solid #2a2d36;color:#eaeaf0}
-    .box{margin-top:34px;border:1px solid #20232b;border-radius:18px;padding:18px;background:#0f1116}
-    .small{font-size:13px;color:#9aa0aa}
+    :root{
+      --bg:#0b0b0e;
+      --panel:rgba(16,18,24,.72);
+      --text:#eef0f6;
+      --muted:#a2a8b3;
+      --line:rgba(255,255,255,.08);
+      --line2:rgba(255,255,255,.12);
+      --white:#ffffff;
+      --shadow: 0 24px 80px rgba(0,0,0,.55);
+      --radius: 22px;
+      --radius2: 28px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      background: radial-gradient(1200px 700px at 70% 10%, rgba(255,255,255,.06), transparent 55%),
+                  radial-gradient(900px 500px at 20% 30%, rgba(255,255,255,.04), transparent 60%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.55;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    @media (prefers-reduced-motion: no-preference){
+      .reveal{opacity:0; transform: translateY(10px); filter: blur(4px)}
+      .reveal.is-in{opacity:1; transform: translateY(0); filter: blur(0); transition: 800ms cubic-bezier(.2,.8,.2,1)}
+      .float{animation: float 8s ease-in-out infinite}
+      @keyframes float{0%,100%{transform: translateY(0)}50%{transform: translateY(-10px)}}
+      .shine::after{
+        content:"";
+        position:absolute; inset:-2px;
+        background: radial-gradient(700px 240px at 30% 0%, rgba(255,255,255,.12), transparent 60%);
+        opacity:.0;
+        transition: opacity 700ms ease;
+        pointer-events:none;
+        border-radius: inherit;
+      }
+      .shine:hover::after{opacity:.85}
+      .btn{transition: transform 220ms ease, opacity 220ms ease, border-color 220ms ease}
+      .btn:hover{transform: translateY(-1px)}
+      .btn:active{transform: translateY(0)}
+      .card{transition: transform 260ms ease, border-color 260ms ease, background 260ms ease}
+      .card:hover{transform: translateY(-3px); border-color: rgba(255,255,255,.18); background: rgba(16,18,24,.82)}
+    }
+
+    .wrap{max-width:1120px; margin:0 auto; padding:72px 22px}
+    .nav{
+      position:sticky; top:0; z-index:10;
+      backdrop-filter: blur(14px);
+      background: rgba(11,11,14,.62);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav-inner{
+      max-width:1120px; margin:0 auto; padding:14px 22px;
+      display:flex; align-items:center; justify-content:space-between; gap:16px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      letter-spacing:.18em; text-transform:uppercase; font-size:12px; color:var(--muted);
+    }
+    .dot{
+      width:8px; height:8px; border-radius:999px; background:#fff; opacity:.85;
+      box-shadow: 0 0 24px rgba(255,255,255,.35);
+    }
+    .nav-links{display:flex; gap:14px; flex-wrap:wrap; justify-content:flex-end}
+    .nav-links a{
+      color: var(--muted);
+      text-decoration:none;
+      font-size:13px;
+      padding:8px 10px;
+      border-radius: 12px;
+      border: 1px solid transparent;
+    }
+    .nav-links a:hover{color:var(--text); border-color: var(--line2); background: rgba(255,255,255,.03)}
+    .hero{min-height: 72vh; display:flex; align-items:center}
+    .kicker{letter-spacing:.26em; text-transform:uppercase; font-size:12px; color:var(--muted)}
+    h1{font-size: clamp(36px, 5vw, 56px); line-height:1.02; margin:16px 0 12px; letter-spacing:-0.02em}
+    .lead{max-width: 760px; font-size: 18px; color: #cfd3dd}
+    .pillrow{display:flex; gap:10px; flex-wrap:wrap; margin-top:18px}
+    .pill{font-size:12px; color: #d7dae3; border: 1px solid var(--line); background: rgba(255,255,255,.03); padding:8px 10px; border-radius: 999px}
+
+    .btns{margin-top:28px; display:flex; gap:12px; flex-wrap:wrap}
+    .btn{
+      display:inline-flex; align-items:center; gap:10px;
+      padding: 12px 16px;
+      border-radius: 16px;
+      text-decoration:none;
+      font-weight:650;
+      font-size:14px;
+      border:1px solid var(--line);
+      color:var(--text);
+      background: rgba(255,255,255,.02);
+    }
+    .btn.primary{
+      background: var(--white);
+      color: #0b0b0e;
+      border-color: transparent;
+      box-shadow: 0 14px 44px rgba(255,255,255,.12);
+    }
+    .btn small{opacity:.8; font-weight:600}
+
+    .section{border-top:1px solid var(--line)}
+    .h2{font-size: 34px; margin: 0 0 14px; letter-spacing:-0.02em}
+    .sub{color:#cfd3dd; max-width: 820px}
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+      gap:18px;
+      margin-top:26px;
+    }
+    .card{
+      position:relative;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, var(--panel), rgba(16,18,24,.55));
+      box-shadow: 0 18px 64px rgba(0,0,0,.35);
+      padding:22px;
+      overflow:hidden;
+    }
+    .card h3{margin:0 0 8px; font-size:18px}
+    .card p{margin:0; color:#cfd3dd}
+    .meta{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px; color: var(--muted); font-size: 12px}
+
+    .two{display:grid; grid-template-columns: 1.2fr .8fr; gap:18px; margin-top:26px}
+    @media (max-width: 880px){ .two{grid-template-columns:1fr} }
+
+    .panel{
+      border-radius: var(--radius2);
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+      padding:22px;
+      box-shadow: var(--shadow);
+      position:relative;
+      overflow:hidden;
+    }
+    .panel .label{color: var(--muted); text-transform:uppercase; letter-spacing:.22em; font-size:11px}
+    .panel ul{margin:12px 0 0 18px; color:#cfd3dd}
+    .panel li{margin:10px 0}
+    .fine{color: var(--muted); font-size: 12px; margin-top: 14px}
+
+    .footer{
+      border-top: 1px solid var(--line);
+      padding: 34px 22px;
+      color: var(--muted);
+      font-size: 12px;
+      text-align:center;
+    }
+    .footer a{color:#cfd3dd; text-decoration:none; border-bottom:1px solid rgba(255,255,255,.14)}
+    .footer a:hover{border-bottom-color: rgba(255,255,255,.30)}
+    a:focus{outline: 2px solid rgba(255,255,255,.35); outline-offset: 3px; border-radius: 12px}
   </style>
 </head>
+
 <body>
-  <div class="wrap">
-    <div class="kicker">No noise. Just action.</div>
-    <h1>REVERA</h1>
-    <p>
-      Security & IT execution for teams that need clarity, speed, and control.
-      Incident response, audits, hardening, and delivery — quietly, precisely.
-    </p>
-
-    <div class="btns">
-      <a class="btn primary" href="mailto:mariarevera.vip@gmail.com">Contact</a>
-      <a class="btn ghost" href="https://t.me/revera_eng">Telegram</a>
+  <div class="nav">
+    <div class="nav-inner">
+      <div class="brand"><span class="dot"></span> REVERA</div>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#approach">Approach</a>
+        <a href="#regions">US • UAE • EU</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
-
-    <div class="box">
-      <div class="small">Services</div>
-      <p style="margin:10px 0 0">
-        • Incident response & recovery<br/>
-        • Security audits & access review<br/>
-        • Infrastructure hardening<br/>
-        • Monitoring & automation
-      </p>
-    </div>
-
-    <p class="small" style="margin-top:22px">© REVERA</p>
   </div>
+
+  <header class="wrap hero">
+    <div class="float reveal">
+      <div class="kicker">No noise. Just action.</div>
+      <h1>Cybersecurity & IT execution<br/>with discreet precision</h1>
+      <p class="lead">
+        REVERA delivers cybersecurity consulting, incident response, security audits,
+        infrastructure hardening, and monitoring & automation for organizations operating across
+        <strong>the US</strong>, <strong>UAE</strong>, and <strong>EU</strong>.
+      </p>
+
+      <div class="pillrow">
+        <div class="pill">Incident Response</div>
+        <div class="pill">Security Audits</div>
+        <div class="pill">Hardening</div>
+        <div class="pill">Monitoring & Automation</div>
+        <div class="pill">Crisis Delivery</div>
+      </div>
+
+      <div class="btns" id="contact">
+        <a class="btn primary" href="mailto:mariarevera.vip@gmail.com">Email <small>business</small></a>
+        <a class="btn" href="https://wa.me/message/XZNVN72W4DF3K1">WhatsApp <small>direct</small></a>
+        <a class="btn" href="https://www.instagram.com/revera_vip/">Instagram</a>
+        <a class="btn" href="https://www.youtube.com/@revera_vip">YouTube</a>
+      </div>
+
+      <div class="fine">For urgent incidents: message WhatsApp + email the same time.</div>
+    </div>
+  </header>
+
+  <section class="section" id="services">
+    <div class="wrap">
+      <div class="reveal">
+        <div class="kicker">Core services</div>
+        <div class="h2">What we do</div>
+        <p class="sub">Built for high-responsibility environments. Clear scope. Fast execution. Minimal exposure.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card shine reveal">
+          <h3>Incident Response</h3>
+          <p>Containment, triage, analysis, eradication, recovery, and executive-ready reporting.</p>
+          <div class="meta"><span>IR playbooks</span>•<span>Forensics-ready</span>•<span>Discrete comms</span></div>
+        </div>
+        <div class="card shine reveal">
+          <h3>Security Audits</h3>
+          <p>Access reviews, risk discovery, control gaps, and prioritized remediation plans.</p>
+          <div class="meta"><span>Access audit</span>•<span>Infra review</span>•<span>Risk mapping</span></div>
+        </div>
+        <div class="card shine reveal">
+          <h3>Infrastructure Hardening</h3>
+          <p>Attack surface reduction: segmentation, policies, baselines, secure configurations.</p>
+          <div class="meta"><span>Hardening</span>•<span>Zero Trust steps</span>•<span>Least privilege</span></div>
+        </div>
+        <div class="card shine reveal">
+          <h3>Monitoring & Automation</h3>
+          <p>Visibility and control: alerting, dashboards, automation, and operational guardrails.</p>
+          <div class="meta"><span>Monitoring</span>•<span>Automation</span>•<span>Operational clarity</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="approach">
+    <div class="wrap">
+      <div class="reveal">
+        <div class="kicker">Execution model</div>
+        <div class="h2">How we work</div>
+        <p class="sub">Quiet delivery, strong control, and decision-grade communication. You get outcomes, not noise.</p>
+      </div>
+
+      <div class="two">
+        <div class="panel shine reveal">
+          <div class="label">Engagement flow</div>
+          <ul>
+            <li><strong>Signal</strong> → short intake + context + constraints</li>
+            <li><strong>Scope</strong> → objectives, timeline, deliverables</li>
+            <li><strong>Action</strong> → execution with minimal disruption</li>
+            <li><strong>Outcome</strong> → report + remediation plan + next steps</li>
+          </ul>
+          <div class="fine">Fast start. High accountability. Clean documentation.</div>
+        </div>
+
+        <div class="panel shine reveal">
+          <div class="label">What you receive</div>
+          <ul>
+            <li>Prioritized risk map (what matters first)</li>
+            <li>Action plan with owners and deadlines</li>
+            <li>Executive summary (for leadership)</li>
+            <li>Operational checklist (for engineers)</li>
+          </ul>
+          <div class="fine">Designed for decision-making in US/UAE/EU corporate contexts.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="regions">
+    <div class="wrap">
+      <div class="reveal">
+        <div class="kicker">Service coverage</div>
+        <div class="h2">US • UAE • EU</div>
+        <p class="sub">
+          We support organizations across the <strong>United States</strong>, the <strong>United Arab Emirates</strong>,
+          and <strong>Europe</strong> — remotely and through controlled on-site options when required.
+          Industries include technology, finance, critical operations, and regulated environments.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    © REVERA · Cybersecurity Consulting · Incident Response · Security Audits · Hardening · Monitoring & Automation<br/>
+    WhatsApp group: <a href="https://chat.whatsapp.com/LpEoWFxvwr6EysRQZJgNil">join</a>
+  </div>
+
+  <script>
+    (function () {
+      const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduce) {
+        document.querySelectorAll('.reveal').forEach(el => el.classList.add('is-in'));
+        return;
+      }
+      const els = Array.from(document.querySelectorAll('.reveal'));
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) e.target.classList.add('is-in');
+        });
+      }, { threshold: 0.18 });
+      els.forEach(el => io.observe(el));
+    })();
+  </script>
 </body>
 </html>
