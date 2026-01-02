@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>REVERA</title>
+  <style>
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      background:#0b0b0e;color:#eaeaf0;display:flex;min-height:100vh;align-items:center}
+    .wrap{max-width:880px;padding:48px 24px;margin:0 auto}
+    .kicker{letter-spacing:.18em;text-transform:uppercase;color:#9aa0aa;font-size:12px}
+    h1{font-size:48px;line-height:1.05;margin:14px 0 10px}
+    p{font-size:18px;line-height:1.55;color:#c7c9d1;max-width:720px}
+    .btns{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+    a.btn{padding:12px 16px;border-radius:14px;text-decoration:none;display:inline-block}
+    .primary{background:#eaeaf0;color:#0b0b0e;font-weight:600}
+    .ghost{border:1px solid #2a2d36;color:#eaeaf0}
+    .box{margin-top:34px;border:1px solid #20232b;border-radius:18px;padding:18px;background:#0f1116}
+    .small{font-size:13px;color:#9aa0aa}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="kicker">No noise. Just action.</div>
+    <h1>REVERA</h1>
+    <p>
+      Security & IT execution for teams that need clarity, speed, and control.
+      Incident response, audits, hardening, and delivery — quietly, precisely.
+    </p>
+
+    <div class="btns">
+      <a class="btn primary" href="mailto:mariarevera.vip@gmail.com">Contact</a>
+      <a class="btn ghost" href="https://t.me/revera_eng">Telegram</a>
+    </div>
+
+    <div class="box">
+      <div class="small">Services</div>
+      <p style="margin:10px 0 0">
+        • Incident response & recovery<br/>
+        • Security audits & access review<br/>
+        • Infrastructure hardening<br/>
+        • Monitoring & automation
+      </p>
+    </div>
+
+    <p class="small" style="margin-top:22px">© REVERA</p>
+  </div>
+</body>
+</html>
